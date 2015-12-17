@@ -58,7 +58,7 @@ public class PrintMessage {
 		System.out.println("구매하신 제품 목록");
 		for (ProductModel product : productList) {
 			System.out.println(product.toString());
-			orderPrice += product.getProductPrice() * (product.getProductDiscountRate() / 100);
+			orderPrice += product.getProductPrice() * (1 - (product.getProductDiscountRate() / 100));
 		}
 		System.out.println(String.format("총 구매 금액은 %d 입니다.", orderPrice));
 
