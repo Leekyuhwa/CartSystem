@@ -18,12 +18,12 @@ public class CartRepository extends BaseRepository {
 
 	@Override
 	public void addProduct(ProductModel newProduct) {
-
+		getProductList().add(newProduct);
 	}
 
 	@Override
 	public void deleteProduct(ProductModel delProduct) {
-
+		getProductList().remove(delProduct);
 	}
 
 	@Override
