@@ -24,4 +24,18 @@ public abstract class BaseRepository {
 	public void setProductList(List<ProductModel> productList) {
 		this.productList = productList;
 	}
+
+	public ProductModel findProductByProductCode(String productCode) {
+		if (productCode == null) {
+			return null;
+		}
+
+		for (ProductModel product : productList) {
+			if (product.getProductCode().equals(productCode)) {
+				return product;
+			}
+		}
+
+		return null;
+	}
 }

@@ -1,3 +1,5 @@
+package oldCode;
+
 public class Product {
 	String cate;
 	String name;
@@ -13,10 +15,10 @@ public class Product {
 
 	void instance() {
 
-		if (cate.equals("HomeAppliances")) {
+		if (cate.equals("oldCode.HomeAppliances")) {
 			new HomeAppliances(cate, name, code, price);
 		}
-		if (cate.equals("Fashion")) {
+		if (cate.equals("oldCode.Fashion")) {
 			new Fashion(cate, name, code, price);
 		}
 	}

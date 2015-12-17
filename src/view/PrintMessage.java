@@ -50,4 +50,17 @@ public class PrintMessage {
 		System.out.println("삭제하고자 하는 상품 코드을 입력하세요.");
 	}
 
+	public static void printOrderList(List<ProductModel> productList) {
+
+		int orderPrice = 0;
+
+		System.out.println("4. 구매하기");
+		System.out.println("구매하신 제품 목록");
+		for (ProductModel product : productList) {
+			System.out.println(product.toString());
+			orderPrice += product.getProductPrice() * (product.getProductDiscountRate() / 100);
+		}
+		System.out.println(String.format("총 구매 금액은 %d 입니다.", orderPrice));
+
+	}
 }

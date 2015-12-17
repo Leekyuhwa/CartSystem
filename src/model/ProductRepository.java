@@ -28,18 +28,4 @@ public class ProductRepository extends BaseRepository {
 		return getProductList();
 	}
 
-	public ProductModel findProductByProductCode(String productCode) {
-		if (productCode == null) {
-			return null;
-		}
-
-		for (ProductModel product : getProductList()) {
-			if (product.getProductCode().equals(productCode)) {
-				return product;
-			}
-		}
-
-		return null;
-	}
-
 }

@@ -1,10 +1,11 @@
 package controller;
 
 import model.CartRepository;
+import model.ProductModel;
 import util.InputUtil;
 import view.PrintMessage;
 
-public class CartDeleteController extends BaseController {
+public class CartDeleteController extends BaseController<String> {
 
 	private CartRepository cartRepository = CartRepository.getInstance();
 
@@ -15,8 +16,9 @@ public class CartDeleteController extends BaseController {
 	}
 
 	@Override
-	protected void checkInputValue(Object value) {
-
+	protected void checkInputValue(String value) {
+		ProductModel product = cartRepository.findProductByProductCode(value);
+		cartRepository.deleteProduct(product);
 	}
 
 	@Override

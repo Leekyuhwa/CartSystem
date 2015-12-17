@@ -21,9 +21,9 @@ public class PurchaseController extends BaseController<Integer> {
 		productModelList.add(new ProductModel("HT011", 250, "HomeAppliance", "TV", 10));
 		productModelList.add(new ProductModel("HC001", 100, "HomeAppliance", "Computer", 10));
 		productModelList.add(new ProductModel("HL002", 120, "HomeAppliance", "Laptop", 10));
-		productModelList.add(new ProductModel("FC001", 60, "Fashion", "Coat", 0));
-		productModelList.add(new ProductModel("FK015", 10, "Fashion", "Knit", 0));
-		productModelList.add(new ProductModel("FS207", 5, "Fashion", "Skirt", 0));
+		productModelList.add(new ProductModel("FC001", 60, "oldCode.Fashion", "Coat", 0));
+		productModelList.add(new ProductModel("FK015", 10, "oldCode.Fashion", "Knit", 0));
+		productModelList.add(new ProductModel("FS207", 5, "oldCode.Fashion", "Skirt", 0));
 
 		productRepository.setProductList(productModelList);
 	}

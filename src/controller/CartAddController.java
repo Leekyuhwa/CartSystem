@@ -20,9 +20,11 @@ public class CartAddController extends BaseController<String> {
 	@Override
 	protected void checkInputValue(String value) {
 		ProductModel product = productRepository.findProductByProductCode(value);
+
 		if (product == null) {
 			return;
 		}
+
 		cartRepository.addProduct(product);
 	}
 

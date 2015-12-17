@@ -1,3 +1,5 @@
+package oldCode;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -43,7 +45,7 @@ public class Purchase {
 		System.out.println("Laptop		|HL002			|120");
 		System.out.println("Tv			|HT011			|250");
 		System.out.println("---------------------------------------");
-		System.out.println("카테고리 : Fashion (" + FASHION_SALE * 100 + "% discount event)");
+		System.out.println("카테고리 : oldCode.Fashion (" + FASHION_SALE * 100 + "% discount event)");
 		System.out.println("상품명			|상품코드			|가격");
 		System.out.println("Coat			|FC001			|60");
 		System.out.println("Knit			|FK015			|10");
@@ -157,11 +159,11 @@ public class Purchase {
 
 			Product p = (Product) list.get(i);
 
-			if (p.cate.equals("HomeAppliances")) {
+			if (p.cate.equals("oldCode.HomeAppliances")) {
 				sum += p.price * (1 - HOME_SALE);
 			}
 
-			if (p.cate.equals("Fashion")) {
+			if (p.cate.equals("oldCode.Fashion")) {
 				sum += p.price * (1 - FASHION_SALE);
 			}
 
