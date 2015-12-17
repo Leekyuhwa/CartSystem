@@ -1,18 +1,15 @@
 package controller;
 
+import model.CartRepository;
 import model.InputType;
 import model.ProductModel;
 import model.ProductRepository;
-import model.CartRepository;
 import util.InputUtil;
 import view.PrintMessage;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Coupang on 2015-12-15.
- */
 public class PurchaseController extends BaseController<Integer> {
 
 	private ProductRepository productRepository = ProductRepository.getInstance();

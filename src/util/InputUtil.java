@@ -3,9 +3,6 @@ package util;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- * Created by Coupang on 2015-12-15.
- */
 public class InputUtil {
 
 	private static Scanner scanner = new Scanner(System.in);
@@ -34,7 +31,7 @@ public class InputUtil {
 		if (!scanner.hasNextLine()) {
 			return null;
 		}
-		scanner.nextLine();	//Integer String 연속적으로 받을 때 Scanner Buffer에 쓰레기값 존재에 대한 처리 고민중
+		scanner.nextLine();    //Integer String 연속적으로 받을 때 Scanner Buffer에 쓰레기값 존재에 대한 처리 고민중
 		return scanner.nextLine();
 	}
 

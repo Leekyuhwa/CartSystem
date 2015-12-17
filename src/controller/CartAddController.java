@@ -1,15 +1,12 @@
 package controller;
 
+import model.CartRepository;
 import model.ProductModel;
 import model.ProductRepository;
-import model.CartRepository;
 import util.InputUtil;
 import view.PrintMessage;
 
-/**
- * Created by Coupang on 2015-12-16.
- */
-public class CartAddController extends BaseController<String>{
+public class CartAddController extends BaseController<String> {
 
 	private ProductRepository productRepository = ProductRepository.getInstance();
 	private CartRepository cartRepository = CartRepository.getInstance();

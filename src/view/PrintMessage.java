@@ -4,9 +4,6 @@ import model.ProductModel;
 
 import java.util.List;
 
-/**
- * Created by Coupang on 2015-12-15.
- */
 public class PrintMessage {
 
 	public void printMainTitle() {
@@ -22,7 +19,7 @@ public class PrintMessage {
 		}
 	}
 
-	public static  void printInputMessage() {
+	public static void printInputMessage() {
 		System.out.println(" 1. 장바구니에 담기");
 		System.out.println(" 2. 장바구니 목록보기");
 		System.out.println(" 3. 장바구니 목록 삭제");

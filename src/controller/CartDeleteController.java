@@ -4,9 +4,6 @@ import model.CartRepository;
 import util.InputUtil;
 import view.PrintMessage;
 
-/**
- * Created by Coupang on 2015-12-17.
- */
 public class CartDeleteController extends BaseController {
 
 	private CartRepository cartRepository = CartRepository.getInstance();

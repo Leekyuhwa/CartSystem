@@ -20,7 +20,7 @@ public enum InputType {
 		}
 	}
 
-	InputType (int type) {
+	InputType(int type) {
 		this.type = type;
 	}
 

@@ -2,9 +2,6 @@ package model;
 
 import java.util.List;
 
-/**
- * Created by Coupang on 2015-12-16.
- */
 public class CartRepository extends BaseRepository {
 
 	private static CartRepository cartRepository;
@@ -34,6 +31,5 @@ public class CartRepository extends BaseRepository {
 	public void removeAll() {
 		getProductList().clear();
 	}
-
 
 }

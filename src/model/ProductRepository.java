@@ -2,7 +2,7 @@ package model;
 
 import java.util.List;
 
-public class ProductRepository extends BaseRepository{
+public class ProductRepository extends BaseRepository {
 
 	private static ProductRepository productRepository;
 
